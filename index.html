@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raju's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    header {
+      background-color: #2d2dff;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project, .review {
+      background: white;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover, .review:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #2d2dff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Raju's Portfolio</h1>
+    <p>DevOps Engineer | Cloud Enthusiast | Project Innovator</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Cartoon Company Automation</h3>
+      <p>Automated the deployment pipeline for Cartoon Company using Jenkins, Docker, and Kubernetes. Integrated Ansible for configuration management and GitHub for version control. Ensured zero-downtime deployments and enhanced system observability with Datadog.</p>
+    </div>
+    <div class="project">
+      <h3>E-commerce CI/CD Pipeline</h3>
+      <p>Built a scalable CI/CD pipeline for an online store, managing infrastructure with Terraform and automating builds and releases with Jenkins and Maven.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Reviews</h2>
+    <div class="review">
+      <strong>Priya S. (Project Manager)</strong>
+      <p>"Raju brings dedication and technical excellence to every task. His work on the Cartoon Company project transformed our release process."</p>
+    </div>
+    <div class="review">
+      <strong>Amit R. (Team Lead)</strong>
+      <p>"A dependable engineer with sharp DevOps skills. Raju's problem-solving during production incidents has saved us many times."</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Raju's Portfolio. All rights reserved.
+  </footer>
+
+</body>
+</html>
